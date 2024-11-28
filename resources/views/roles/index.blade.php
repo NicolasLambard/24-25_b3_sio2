@@ -22,10 +22,7 @@
                                         class="btn btn-primary btn-sm">Show</a>
                                 </div>
 
-                                <div class="col-sm">
-                                    <a href="{{ route('roles.create', $role->id) }}"
-                                        class="btn btn-primary btn-sm">Create</a>
-                                </div>
+                               
                                 
                                 <div class="col-sm">
                                     <form action="{{ route('roles.destroy', $role->id) }}" method="post">
@@ -39,6 +36,11 @@
                     </div>
                 </div>
             @endforeach
+
+            <div class="col-sm">
+                                    <a href="{{ route('roles.create', $role->id) }}"
+                                        class="btn btn-primary btn-sm">Create</a>
+                                </div>
         </div>
 
     @stop
